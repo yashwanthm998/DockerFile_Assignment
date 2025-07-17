@@ -17,42 +17,44 @@ This part demonstrates:
 
 ### Build the image
 
-```bash
+```
 cd Docker_ImageCreation
 docker build -t myimage:1.0 .
+```
 ---
 
 ## 2. Launch MyApp
 
 This part demonstrates:
 
-- Pulling the image we created i.e **myimage:1.0
+- Pulling the image we created i.e **myimage:1.0**
 - Installing Nginx
 - Creating **index.html** which displays simple message
 
 ### Running MyApp
 
 - Build the new image
-
-```bash
+  
+```
 cd myapp
 docker build -t myapp:1.0 .
+```
 
 - Run the container
-
-```bash
+  
+```
 docker run -p 9191:9191 image_name
-
+```
 <img width="507" height="232" alt="Screenshot 2025-07-17 at 12 25 39 PM" src="https://github.com/user-attachments/assets/17e48e67-3f1a-477a-9444-d0fc87e6867b" />
 
 
 ### Expose App using Ngrok
 
 - Start ngrok
-
-```bash
+  
+```
 ngrok http 9191
-
+```
 <img width="688" height="305" alt="Screenshot 2025-07-17 at 12 27 24 PM" src="https://github.com/user-attachments/assets/702e7e3a-f6ec-43ed-b27d-27a14fcf84f3" />
 
 - You’ll get a public URL. Go to that URL to view your html page
