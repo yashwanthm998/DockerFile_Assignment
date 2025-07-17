@@ -52,7 +52,7 @@ docker run -p 9191:9191 image_name
 
 ---
 
-### Expose App using Ngrok
+## 3. Expose App using Ngrok
 
 - Start ngrok
   
